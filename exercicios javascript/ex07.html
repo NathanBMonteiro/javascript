@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lógica de programação</h1>
+
+    <script>
+
+        var jogador1 = prompt("Digite um número");
+        jogador1 = parseInt(jogador1);
+
+        var jogador2 = prompt("Digite outro número");
+        jogador2 = parseInt(jogador2);
+
+        if(jogador1 === jogador2){
+            alert("Vocês empataram")
+        } else{
+
+        var sorteio = parseInt(Math.rondom() * 2);
+
+        if(sorteio === 0){
+
+            if(jogador1 < jogador2){
+
+            alert("Ganhou jogador 1");
+        } else{
+            alert("Ganhou jogador 2");
+        }
+
+        } else{
+        if(jogador1 > jogador2){
+            alert("Ganhou jogador 1");
+        } else{
+            alert("Ganhou jogador 2");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
